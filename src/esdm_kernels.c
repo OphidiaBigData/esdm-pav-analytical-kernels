@@ -40,17 +40,17 @@ int esdm_is_a_reduce_func(const char *operation)
 	if (!strcmp(operation, ESDM_FUNCTION_MAX))
 		return 1;
 	if (!strcmp(operation, ESDM_FUNCTION_MIN))
-		return 2;
+		return 1;
 	if (!strcmp(operation, ESDM_FUNCTION_AVG))
-		return 3;
+		return 1;
 	if (!strcmp(operation, ESDM_FUNCTION_SUM))
-		return 4;
+		return 1;
 	if (!strcmp(operation, ESDM_FUNCTION_STD))
-		return 5;
+		return 1;
 	if (!strcmp(operation, ESDM_FUNCTION_VAR))
-		return 6;
+		return 1;
 	if (!strcmp(operation, ESDM_FUNCTION_OUTLIER))
-		return 7;
+		return 1;
 
 	return 0;
 }
