@@ -23,6 +23,9 @@
 
 #define UNUSED(x) {(void)(x);}
 
+#define ESDM_FUNCTION_OP_LESS_THAN '<'
+#define ESDM_FUNCTION_OP_MORE_THAN '>'
+
 typedef struct _esdm_stream_data_out_t {
 	double value;
 	double value2;
@@ -46,6 +49,8 @@ int esdm_is_a_reduce_func(const char *operation)
 		return 5;
 	if (!strcmp(operation, ESDM_FUNCTION_VAR))
 		return 6;
+	if (!strcmp(operation, ESDM_FUNCTION_OUTLIER))
+		return 7;
 
 	return 0;
 }
@@ -607,6 +612,187 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 			return NULL;
 		}
 
+	} else if (!strcmp(stream_data->operation, ESDM_FUNCTION_OUTLIER)) {
+
+		tmp = (esdm_stream_data_out_t *) malloc(sizeof(esdm_stream_data_out_t));
+		tmp->value = 0;
+
+		char *save_pointer = NULL, *arg = args ? strtok_r(args, ESDM_SEPARATOR, &save_pointer) : NULL;
+		char thresh_type = ESDM_FUNCTION_OP_MORE_THAN;
+		if (arg) {
+			if (!isdigit(arg[0])) {
+				if (arg[0] == ESDM_FUNCTION_OP_LESS_THAN)
+					thresh_type = ESDM_FUNCTION_OP_LESS_THAN;
+				arg++;
+			}
+		}
+		if (!arg || !arg[0]) {
+
+			// No element is considered outlier in case the threshold is not given
+
+		} else if (type == SMD_DTYPE_INT8) {
+
+			char *a = (char *) buff, fv = fill_value ? *(char *) fill_value : 0, v = strtol(arg, NULL, 10);
+			for (k = 0; k < n; k++) {
+				idx = 0;
+				for (i = 0; i < ndims; i++)
+					idx = idx * s[i] + ci[i];
+				if (!fill_value || (a[idx] != fv))
+					switch (thresh_type) {
+						case ESDM_FUNCTION_OP_LESS_THAN:
+							if (v > a[idx])
+								tmp->value++;
+							break;
+						case ESDM_FUNCTION_OP_MORE_THAN:
+						default:
+							if (v < a[idx])
+								tmp->value++;
+					}
+				for (i = ndims - 1; i >= 0; i--) {
+					ci[i]++;
+					if (ci[i] < ei[i])
+						break;
+					ci[i] = 0;	// si[i];
+				}
+			}
+
+		} else if (type == SMD_DTYPE_INT16) {
+
+			short *a = (short *) buff, fv = fill_value ? *(short *) fill_value : 0, v = strtol(arg, NULL, 10);
+			for (k = 0; k < n; k++) {
+				idx = 0;
+				for (i = 0; i < ndims; i++)
+					idx = idx * s[i] + ci[i];
+				if (!fill_value || (a[idx] != fv))
+					switch (thresh_type) {
+						case ESDM_FUNCTION_OP_LESS_THAN:
+							if (v > a[idx])
+								tmp->value++;
+							break;
+						case ESDM_FUNCTION_OP_MORE_THAN:
+						default:
+							if (v < a[idx])
+								tmp->value++;
+					}
+				for (i = ndims - 1; i >= 0; i--) {
+					ci[i]++;
+					if (ci[i] < ei[i])
+						break;
+					ci[i] = 0;	// si[i];
+				}
+			}
+
+		} else if (type == SMD_DTYPE_INT32) {
+
+			int *a = (int *) buff, fv = fill_value ? *(int *) fill_value : 0, v = strtol(arg, NULL, 10);
+			for (k = 0; k < n; k++) {
+				idx = 0;
+				for (i = 0; i < ndims; i++)
+					idx = idx * s[i] + ci[i];
+				if (!fill_value || (a[idx] != fv))
+					switch (thresh_type) {
+						case ESDM_FUNCTION_OP_LESS_THAN:
+							if (v > a[idx])
+								tmp->value++;
+							break;
+						case ESDM_FUNCTION_OP_MORE_THAN:
+						default:
+							if (v < a[idx])
+								tmp->value++;
+					}
+				for (i = ndims - 1; i >= 0; i--) {
+					ci[i]++;
+					if (ci[i] < ei[i])
+						break;
+					ci[i] = 0;	// si[i];
+				}
+			}
+
+		} else if (type == SMD_DTYPE_INT64) {
+
+			long long *a = (long long *) buff, fv = fill_value ? *(long long *) fill_value : 0, v = strtoll(arg, NULL, 10);
+			for (k = 0; k < n; k++) {
+				idx = 0;
+				for (i = 0; i < ndims; i++)
+					idx = idx * s[i] + ci[i];
+				if (!fill_value || (a[idx] != fv))
+					switch (thresh_type) {
+						case ESDM_FUNCTION_OP_LESS_THAN:
+							if (v > a[idx])
+								tmp->value++;
+							break;
+						case ESDM_FUNCTION_OP_MORE_THAN:
+						default:
+							if (v < a[idx])
+								tmp->value++;
+					}
+				for (i = ndims - 1; i >= 0; i--) {
+					ci[i]++;
+					if (ci[i] < ei[i])
+						break;
+					ci[i] = 0;	// si[i];
+				}
+			}
+
+		} else if (type == SMD_DTYPE_FLOAT) {
+
+			float *a = (float *) buff, fv = fill_value ? *(float *) fill_value : 0, v = strtof(arg, NULL);
+			for (k = 0; k < n; k++) {
+				idx = 0;
+				for (i = 0; i < ndims; i++)
+					idx = idx * s[i] + ci[i];
+				if (!fill_value || (a[idx] != fv))
+					switch (thresh_type) {
+						case ESDM_FUNCTION_OP_LESS_THAN:
+							if (v > a[idx])
+								tmp->value++;
+							break;
+						case ESDM_FUNCTION_OP_MORE_THAN:
+						default:
+							if (v < a[idx])
+								tmp->value++;
+					}
+				for (i = ndims - 1; i >= 0; i--) {
+					ci[i]++;
+					if (ci[i] < ei[i])
+						break;
+					ci[i] = 0;	// si[i];
+				}
+			}
+
+		} else if (type == SMD_DTYPE_DOUBLE) {
+
+			double *a = (double *) buff, fv = fill_value ? *(double *) fill_value : 0, v = strtod(arg, NULL);
+			for (k = 0; k < n; k++) {
+				idx = 0;
+				for (i = 0; i < ndims; i++)
+					idx = idx * s[i] + ci[i];
+				if (!fill_value || (a[idx] != fv))
+					switch (thresh_type) {
+						case ESDM_FUNCTION_OP_LESS_THAN:
+							if (v > a[idx])
+								tmp->value++;
+							break;
+						case ESDM_FUNCTION_OP_MORE_THAN:
+						default:
+							if (v < a[idx])
+								tmp->value++;
+					}
+				for (i = ndims - 1; i >= 0; i--) {
+					ci[i]++;
+					if (ci[i] < ei[i])
+						break;
+					ci[i] = 0;	// si[i];
+				}
+			}
+
+		} else {
+			free(tmp);
+			if (args)
+				free(args);
+			return NULL;
+		}
+
 	} else if (!strcmp(stream_data->operation, ESDM_FUNCTION_SUM_SCALAR)) {
 
 		if (!args) {
@@ -618,11 +804,11 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 		tmp = (esdm_stream_data_out_t *) malloc(sizeof(esdm_stream_data_out_t));
 		tmp->number = 1;
 
-		char *save_pointer = NULL, *arg = strtok_r(args, ESDM_SEPARATOR, &save_pointer);
+		char *save_pointer = NULL, *arg = args ? strtok_r(args, ESDM_SEPARATOR, &save_pointer) : NULL;
 
 		if (type == SMD_DTYPE_INT8) {
 
-			char scalar = strtol(arg, NULL, 10);
+			char scalar = arg ? strtol(arg, NULL, 10) : 0;
 			char *a = (char *) buff, v = 0, fv = fill_value ? *(char *) fill_value : 0;
 			size_t step = sizeof(char);
 			for (k = 0; k < n; k++) {
@@ -642,7 +828,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT16) {
 
-			short scalar = strtol(arg, NULL, 10);
+			short scalar = arg ? strtol(arg, NULL, 10) : 0;
 			short *a = (short *) buff, v = 0, fv = fill_value ? *(short *) fill_value : 0;
 			size_t step = sizeof(short);
 			for (k = 0; k < n; k++) {
@@ -662,7 +848,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT32) {
 
-			int scalar = strtol(arg, NULL, 10);
+			int scalar = arg ? strtol(arg, NULL, 10) : 0;
 			int *a = (int *) buff, v = 0, fv = fill_value ? *(int *) fill_value : 0;
 			size_t step = sizeof(int);
 			for (k = 0; k < n; k++) {
@@ -682,7 +868,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT64) {
 
-			long long scalar = strtoll(arg, NULL, 10);
+			long long scalar = arg ? strtoll(arg, NULL, 10) : 0;
 			long long *a = (long long *) buff, v = 0, fv = fill_value ? *(long long *) fill_value : 0;
 			size_t step = sizeof(long long);
 			for (k = 0; k < n; k++) {
@@ -702,7 +888,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_FLOAT) {
 
-			float scalar = strtof(arg, NULL);
+			float scalar = arg ? strtof(arg, NULL) : 0;
 			float *a = (float *) buff, v = 0, fv = fill_value ? *(float *) fill_value : 0;
 			size_t step = sizeof(float);
 			for (k = 0; k < n; k++) {
@@ -722,7 +908,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_DOUBLE) {
 
-			double scalar = strtod(arg, NULL);
+			double scalar = arg ? strtod(arg, NULL) : 0;
 			double *a = (double *) buff, v = 0, fv = fill_value ? *(double *) fill_value : 0;
 			size_t step = sizeof(double);
 			for (k = 0; k < n; k++) {
@@ -758,11 +944,11 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 		tmp = (esdm_stream_data_out_t *) malloc(sizeof(esdm_stream_data_out_t));
 		tmp->number = 1;
 
-		char *save_pointer = NULL, *arg = strtok_r(args, ESDM_SEPARATOR, &save_pointer);
+		char *save_pointer = NULL, *arg = args ? strtok_r(args, ESDM_SEPARATOR, &save_pointer) : NULL;
 
 		if (type == SMD_DTYPE_INT8) {
 
-			char scalar = strtol(arg, NULL, 10);
+			char scalar = arg ? strtol(arg, NULL, 10) : 1;
 			char *a = (char *) buff, v = 0, fv = fill_value ? *(char *) fill_value : 0;
 			size_t step = sizeof(char);
 			for (k = 0; k < n; k++) {
@@ -782,7 +968,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT16) {
 
-			short scalar = strtol(arg, NULL, 10);
+			short scalar = arg ? strtol(arg, NULL, 10) : 1;
 			short *a = (short *) buff, v = 0, fv = fill_value ? *(short *) fill_value : 0;
 			size_t step = sizeof(short);
 			for (k = 0; k < n; k++) {
@@ -802,7 +988,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT32) {
 
-			int scalar = strtol(arg, NULL, 10);
+			int scalar = arg ? strtol(arg, NULL, 10) : 1;
 			int *a = (int *) buff, v = 0, fv = fill_value ? *(int *) fill_value : 0;
 			size_t step = sizeof(int);
 			for (k = 0; k < n; k++) {
@@ -822,7 +1008,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT64) {
 
-			long long scalar = strtoll(arg, NULL, 10);
+			long long scalar = arg ? strtoll(arg, NULL, 10) : 1;
 			long long *a = (long long *) buff, v = 0, fv = fill_value ? *(long long *) fill_value : 0;
 			size_t step = sizeof(long long);
 			for (k = 0; k < n; k++) {
@@ -842,7 +1028,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_FLOAT) {
 
-			float scalar = strtof(arg, NULL);
+			float scalar = arg ? strtof(arg, NULL) : 1;
 			float *a = (float *) buff, v = 0, fv = fill_value ? *(float *) fill_value : 0;
 			size_t step = sizeof(float);
 			for (k = 0; k < n; k++) {
@@ -862,7 +1048,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_DOUBLE) {
 
-			double scalar = strtod(arg, NULL);
+			double scalar = arg ? strtod(arg, NULL) : 1;
 			double *a = (double *) buff, v = 0, fv = fill_value ? *(double *) fill_value : 0;
 			size_t step = sizeof(double);
 			for (k = 0; k < n; k++) {
@@ -1657,11 +1843,11 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 		tmp = (esdm_stream_data_out_t *) malloc(sizeof(esdm_stream_data_out_t));
 		tmp->number = 1;
 
-		char *save_pointer = NULL, *arg = strtok_r(args, ESDM_SEPARATOR, &save_pointer);
+		char *save_pointer = NULL, *arg = args ? strtok_r(args, ESDM_SEPARATOR, &save_pointer) : NULL;
 
 		if (type == SMD_DTYPE_INT8) {
 
-			char scalar = strtol(arg, NULL, 10);
+			char scalar = arg ? strtol(arg, NULL, 10) : 1;
 			char *a = (char *) buff, v = 0, fv = fill_value ? *(char *) fill_value : 0;
 			size_t step = sizeof(char);
 			for (k = 0; k < n; k++) {
@@ -1681,7 +1867,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT16) {
 
-			short scalar = strtol(arg, NULL, 10);
+			short scalar = arg ? strtol(arg, NULL, 10) : 1;
 			short *a = (short *) buff, v = 0, fv = fill_value ? *(short *) fill_value : 0;
 			size_t step = sizeof(short);
 			for (k = 0; k < n; k++) {
@@ -1701,7 +1887,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT32) {
 
-			int scalar = strtol(arg, NULL, 10);
+			int scalar = arg ? strtol(arg, NULL, 10) : 1;
 			int *a = (int *) buff, v = 0, fv = fill_value ? *(int *) fill_value : 0;
 			size_t step = sizeof(int);
 			for (k = 0; k < n; k++) {
@@ -1721,7 +1907,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_INT64) {
 
-			long long scalar = strtoll(arg, NULL, 10);
+			long long scalar = arg ? strtoll(arg, NULL, 10) : 1;
 			long long *a = (long long *) buff, v = 0, fv = fill_value ? *(long long *) fill_value : 0;
 			size_t step = sizeof(long long);
 			for (k = 0; k < n; k++) {
@@ -1741,7 +1927,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_FLOAT) {
 
-			float scalar = strtof(arg, NULL);
+			float scalar = arg ? strtof(arg, NULL) : 1;
 			float *a = (float *) buff, v = 0, fv = fill_value ? *(float *) fill_value : 0;
 			size_t step = sizeof(float);
 			for (k = 0; k < n; k++) {
@@ -1761,7 +1947,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		} else if (type == SMD_DTYPE_DOUBLE) {
 
-			double scalar = strtod(arg, NULL);
+			double scalar = arg ? strtod(arg, NULL) : 1;
 			double *a = (double *) buff, v = 0, fv = fill_value ? *(double *) fill_value : 0;
 			size_t step = sizeof(double);
 			for (k = 0; k < n; k++) {
@@ -3731,7 +3917,7 @@ void esdm_reduce_func(esdm_dataspace_t * space, void *user_ptr, void *stream_fun
 
 			}
 
-		} else if (!strcmp(stream_data->operation, ESDM_FUNCTION_AVG) || !strcmp(stream_data->operation, ESDM_FUNCTION_SUM)) {
+		} else if (!strcmp(stream_data->operation, ESDM_FUNCTION_AVG) || !strcmp(stream_data->operation, ESDM_FUNCTION_SUM) || !strcmp(stream_data->operation, ESDM_FUNCTION_OUTLIER)) {
 
 			if (!tmp)
 				break;

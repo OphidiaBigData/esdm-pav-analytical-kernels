@@ -33,6 +33,8 @@
 #define ESDM_FUNCTION_STD "std"
 #define ESDM_FUNCTION_VAR "var"
 
+#define ESDM_FUNCTION_OUTLIER "outlier"
+
 #define ESDM_FUNCTION_SUM_SCALAR "sum_scalar"
 #define ESDM_FUNCTION_MUL_SCALAR "mul_scalar"
 
