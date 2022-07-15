@@ -616,6 +616,7 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 
 		tmp = (esdm_stream_data_out_t *) malloc(sizeof(esdm_stream_data_out_t));
 		tmp->value = 0;
+		tmp->number = 1;	// Use only to avoid errors during the reduction phase
 
 		char *save_pointer = NULL, *arg = args ? strtok_r(args, ESDM_SEPARATOR, &save_pointer) : NULL;
 		char thresh_type = ESDM_FUNCTION_OP_MORE_THAN;
