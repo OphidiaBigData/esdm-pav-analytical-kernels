@@ -654,9 +654,9 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 				for (i = 0; i < ndims; i++)
 					idx = idx * s[i] + ci[i];
 				if (!fill_value || (a[idx] != fv)) {
-					if ((option & 1) && (!tmp->number || (v1 < a[idx])))	// Min
+					if ((option & 1) && (!tmp->number || (v1 > a[idx])))	// Min
 						v1 = a[idx];
-					if ((option & 2) && (!tmp->number || (v2 > a[idx])))	// Max
+					if ((option & 2) && (!tmp->number || (v2 < a[idx])))	// Max
 						v2 = a[idx];
 					if (option & 4)	// Avg
 						tmp->value3 += a[idx];
@@ -680,9 +680,9 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 				for (i = 0; i < ndims; i++)
 					idx = idx * s[i] + ci[i];
 				if (!fill_value || (a[idx] != fv)) {
-					if ((option & 1) && (!tmp->number || (v1 < a[idx])))	// Min
+					if ((option & 1) && (!tmp->number || (v1 > a[idx])))	// Min
 						v1 = a[idx];
-					if ((option & 2) && (!tmp->number || (v2 > a[idx])))	// Max
+					if ((option & 2) && (!tmp->number || (v2 < a[idx])))	// Max
 						v2 = a[idx];
 					if (option & 4)	// Avg
 						tmp->value3 += a[idx];
@@ -706,9 +706,9 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 				for (i = 0; i < ndims; i++)
 					idx = idx * s[i] + ci[i];
 				if (!fill_value || (a[idx] != fv)) {
-					if ((option & 1) && (!tmp->number || (v1 < a[idx])))	// Min
+					if ((option & 1) && (!tmp->number || (v1 > a[idx])))	// Min
 						v1 = a[idx];
-					if ((option & 2) && (!tmp->number || (v2 > a[idx])))	// Max
+					if ((option & 2) && (!tmp->number || (v2 < a[idx])))	// Max
 						v2 = a[idx];
 					if (option & 4)	// Avg
 						tmp->value3 += a[idx];
@@ -732,9 +732,9 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 				for (i = 0; i < ndims; i++)
 					idx = idx * s[i] + ci[i];
 				if (!fill_value || (a[idx] != fv)) {
-					if ((option & 1) && (!tmp->number || (v1 < a[idx])))	// Min
+					if ((option & 1) && (!tmp->number || (v1 > a[idx])))	// Min
 						v1 = a[idx];
-					if ((option & 2) && (!tmp->number || (v2 > a[idx])))	// Max
+					if ((option & 2) && (!tmp->number || (v2 < a[idx])))	// Max
 						v2 = a[idx];
 					if (option & 4)	// Avg
 						tmp->value3 += a[idx];
@@ -758,9 +758,9 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 				for (i = 0; i < ndims; i++)
 					idx = idx * s[i] + ci[i];
 				if (!fill_value || (a[idx] != fv)) {
-					if ((option & 1) && (!tmp->number || (v1 < a[idx])))	// Min
+					if ((option & 1) && (!tmp->number || (v1 > a[idx])))	// Min
 						v1 = a[idx];
-					if ((option & 2) && (!tmp->number || (v2 > a[idx])))	// Max
+					if ((option & 2) && (!tmp->number || (v2 < a[idx])))	// Max
 						v2 = a[idx];
 					if (option & 4)	// Avg
 						tmp->value3 += a[idx];
@@ -784,9 +784,9 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 				for (i = 0; i < ndims; i++)
 					idx = idx * s[i] + ci[i];
 				if (!fill_value || (a[idx] != fv)) {
-					if ((option & 1) && (!tmp->number || (v1 < a[idx])))	// Min
+					if ((option & 1) && (!tmp->number || (v1 > a[idx])))	// Min
 						v1 = a[idx];
-					if ((option & 2) && (!tmp->number || (v2 > a[idx])))	// Max
+					if ((option & 2) && (!tmp->number || (v2 < a[idx])))	// Max
 						v2 = a[idx];
 					if (option & 4)	// Avg
 						tmp->value3 += a[idx];
