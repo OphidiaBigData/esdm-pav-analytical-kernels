@@ -32,6 +32,7 @@
 #define ESDM_FUNCTION_SUM "sum"
 #define ESDM_FUNCTION_STD "std"
 #define ESDM_FUNCTION_VAR "var"
+#define ESDM_FUNCTION_STAT "stat"
 
 #define ESDM_FUNCTION_OUTLIER "outlier"
 
@@ -70,13 +71,13 @@ typedef struct _esdm_stream_data_t {
 	char *args;
 	void *buff;
 	char valid;
-	double value;
+	double value1;
 	double value2;
 	uint64_t number;
 	void *fill_value;
 } esdm_stream_data_t;
 
-int esdm_is_a_reduce_func(const char *operation);
+int esdm_is_a_reduce_func(const char *operation, const char *args);
 void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, void *esdm_fill_value);
 void esdm_reduce_func(esdm_dataspace_t * space, void *user_ptr, void *stream_func_out);
 
