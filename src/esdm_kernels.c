@@ -118,12 +118,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -138,12 +140,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -158,12 +162,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -178,12 +184,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -198,12 +206,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -218,12 +228,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -250,12 +262,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -270,12 +284,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -290,12 +306,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -310,12 +328,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -330,12 +350,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -350,12 +372,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					v = a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -383,12 +407,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value1 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT16) {
@@ -402,12 +428,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value1 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT32) {
@@ -421,12 +449,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value1 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT64) {
@@ -440,12 +470,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value1 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_FLOAT) {
@@ -459,12 +491,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value1 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_DOUBLE) {
@@ -478,12 +512,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value1 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else {
@@ -512,12 +548,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value2 += a[idx] * a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT16) {
@@ -532,12 +570,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value2 += a[idx] * a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT32) {
@@ -552,12 +592,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value2 += a[idx] * a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT64) {
@@ -572,12 +614,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value2 += a[idx] * a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_FLOAT) {
@@ -592,12 +636,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value2 += a[idx] * a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_DOUBLE) {
@@ -612,12 +658,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					tmp->value2 += a[idx] * a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else {
@@ -663,12 +711,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 						tmp->value3 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v1;
 			tmp->value2 = v2;
@@ -689,12 +739,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 						tmp->value3 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v1;
 			tmp->value2 = v2;
@@ -715,12 +767,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 						tmp->value3 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v1;
 			tmp->value2 = v2;
@@ -741,12 +795,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 						tmp->value3 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v1;
 			tmp->value2 = v2;
@@ -767,12 +823,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 						tmp->value3 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v1;
 			tmp->value2 = v2;
@@ -793,12 +851,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 						tmp->value3 += a[idx];
 					tmp->number++;
 				}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v1;
 			tmp->value2 = v2;
@@ -847,12 +907,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 							if (v < a[idx])
 								tmp->value1++;
 					}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT16) {
@@ -873,12 +935,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 							if (v < a[idx])
 								tmp->value1++;
 					}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT32) {
@@ -899,12 +963,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 							if (v < a[idx])
 								tmp->value1++;
 					}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_INT64) {
@@ -925,12 +991,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 							if (v < a[idx])
 								tmp->value1++;
 					}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_FLOAT) {
@@ -951,12 +1019,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 							if (v < a[idx])
 								tmp->value1++;
 					}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else if (type == SMD_DTYPE_DOUBLE) {
@@ -977,12 +1047,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 							if (v < a[idx])
 								tmp->value1++;
 					}
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 
 		} else {
@@ -1016,12 +1088,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] + scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1036,12 +1110,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] + scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1056,12 +1132,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] + scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1076,12 +1154,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] + scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1096,12 +1176,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] + scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1116,12 +1198,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] + scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1156,12 +1240,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1176,12 +1262,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1196,12 +1284,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1216,12 +1306,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1236,12 +1328,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1256,12 +1350,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * scalar : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1287,12 +1383,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? abs(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1306,12 +1404,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? abs(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1325,12 +1425,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? abs(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1344,12 +1446,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? abs(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1363,12 +1467,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? fabs(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1382,12 +1488,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? fabs(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1413,12 +1521,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sqrt(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1432,12 +1542,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sqrt(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1451,12 +1563,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sqrt(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1470,12 +1584,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sqrt(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1489,12 +1605,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sqrt(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1508,12 +1626,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sqrt(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1539,12 +1659,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1558,12 +1680,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1577,12 +1701,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1596,12 +1722,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1615,12 +1743,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1634,12 +1764,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? a[idx] * a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1666,12 +1798,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? ceil(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1685,12 +1819,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? ceil(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1704,12 +1840,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? ceil(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1723,12 +1861,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? ceil(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1742,12 +1882,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? ceil(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1761,12 +1903,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? ceil(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1793,12 +1937,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1812,12 +1958,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1831,12 +1979,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1850,12 +2000,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1869,12 +2021,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1888,12 +2042,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1920,12 +2076,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx] + 0.5) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1939,12 +2097,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx] + 0.5) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1958,12 +2118,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx] + 0.5) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1977,12 +2139,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx] + 0.5) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -1996,12 +2160,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx] + 0.5) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2015,12 +2181,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? floor(a[idx] + 0.5) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2055,12 +2223,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? pow(a[idx], scalar) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2075,12 +2245,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? pow(a[idx], scalar) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2095,12 +2267,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? pow(a[idx], scalar) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2115,12 +2289,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? pow(a[idx], scalar) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2135,12 +2311,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? pow(a[idx], scalar) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2155,12 +2333,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? pow(a[idx], scalar) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2186,12 +2366,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? exp(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2205,12 +2387,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? exp(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2224,12 +2408,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? exp(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2243,12 +2429,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? exp(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2262,12 +2450,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? exp(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2281,12 +2471,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? exp(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2312,12 +2504,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2331,12 +2525,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2350,12 +2546,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2369,12 +2567,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2388,12 +2588,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2407,12 +2609,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2438,12 +2642,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log10(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2457,12 +2663,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log10(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2476,12 +2684,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log10(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2495,12 +2705,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log10(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2514,12 +2726,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log10(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2533,12 +2747,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? log10(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2564,12 +2780,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2583,12 +2801,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2602,12 +2822,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2621,12 +2843,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2640,12 +2864,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2659,12 +2885,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2690,12 +2918,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2709,12 +2939,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2728,12 +2960,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2747,12 +2981,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2766,12 +3002,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2785,12 +3023,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2816,12 +3056,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2835,12 +3077,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2854,12 +3098,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2873,12 +3119,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2892,12 +3140,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2911,12 +3161,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2942,12 +3194,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? asin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2961,12 +3215,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? asin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2980,12 +3236,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? asin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -2999,12 +3257,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? asin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3018,12 +3278,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? asin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3037,12 +3299,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? asin(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3068,12 +3332,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? acos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3087,12 +3353,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? acos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3106,12 +3374,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? acos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3125,12 +3395,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? acos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3144,12 +3416,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? acos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3163,12 +3437,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? acos(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3194,12 +3470,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? atan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3213,12 +3491,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? atan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3232,12 +3512,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? atan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3251,12 +3533,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? atan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3270,12 +3554,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? atan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3289,12 +3575,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? atan(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3320,12 +3608,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sinh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3339,12 +3629,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sinh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3358,12 +3650,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sinh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3377,12 +3671,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sinh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3396,12 +3692,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sinh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3415,12 +3713,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? sinh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3446,12 +3746,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cosh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3465,12 +3767,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cosh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3484,12 +3788,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cosh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3503,12 +3809,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cosh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3522,12 +3830,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cosh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3541,12 +3851,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? cosh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3572,12 +3884,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tanh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3591,12 +3905,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tanh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3610,12 +3926,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tanh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3629,12 +3947,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tanh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3648,12 +3968,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tanh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3667,12 +3989,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? tanh(a[idx]) : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3699,12 +4023,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? 1.0 / a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3718,12 +4044,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? 1.0 / a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3737,12 +4065,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? 1.0 / a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3756,12 +4086,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? 1.0 / a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3775,12 +4107,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? 1.0 / a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3794,12 +4128,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? 1.0 / a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3825,12 +4161,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? !a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3844,12 +4182,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? !a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3863,12 +4203,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? !a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3882,12 +4224,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? !a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3901,12 +4245,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? !a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
@@ -3920,12 +4266,14 @@ void *esdm_stream_func(esdm_dataspace_t * space, void *buff, void *user_ptr, voi
 					idx = idx * s[i] + ci[i];
 				v = !fill_value || (a[idx] != fv) ? !a[idx] : fv;
 				memcpy(stream_data->buff + idx * step, &v, step);
-				for (i = ndims - 1; i >= 0; i--) {
+				for (i = ndims - 1; i > 0; i--) {
 					ci[i]++;
 					if (ci[i] < ei[i])
 						break;
 					ci[i] = 0;	// si[i];
 				}
+				if (!i)
+					ci[i]++;
 			}
 			tmp->value1 = v;
 
