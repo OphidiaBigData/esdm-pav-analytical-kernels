@@ -17,7 +17,7 @@
 #
 
 AC_PREREQ([2.60])
-AC_INIT([esdm-pav-analytics-kernels], [1.0.0], [ophidia-info@cmcc.it])
+AC_INIT([esdm-pav-analytics-kernels], [1.1.0], [ophidia-info@cmcc.it])
 
 AC_CONFIG_AUX_DIR([config])
 AM_INIT_AUTOMAKE([foreign])
